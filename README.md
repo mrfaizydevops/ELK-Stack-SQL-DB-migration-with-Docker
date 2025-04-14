@@ -12,7 +12,7 @@ Internet access to download dependencies
 
 ### 1. Clone the Repository
 
-git clone https://github.com/ayeshaAhmed123/ELK-Stack-SQL-DB-migration-with-Docker.git
+git clone https://github.com/mrfaizydevops/ELK-Stack-SQL-DB-migration-with-Docker.git
 cd ELK-Stack-SQL-DB-migration-with-Docker
 ### 2. Make Certs Before making cert update script.sh with your ip
 
