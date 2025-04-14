@@ -1,0 +1,15 @@
+node.name: "logstash"
+http.host: "0.0.0.0"
+
+path.settings: /usr/share/logstash/config
+
+# X-Pack Security Options
+xpack.management.elasticsearch.username: "elastic"
+xpack.management.elasticsearch.password: "RDC***7890"
+
+xpack.monitoring.elasticsearch.username: "elastic"
+xpack.monitoring.elasticsearch.password: "Faiziraja143@f"
+xpack.monitoring.elasticsearch.ssl.certificate_authority: "/usr/share/logstash/config/rootCA.pem"
+xpack.monitoring.elasticsearch.ssl.verification_mode: "full"
+# Metricbeat settings
+monitoring.enabled: false

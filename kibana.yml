@@ -1,0 +1,34 @@
+server.name: kibana
+server.host: 0.0.0.0
+server.publicBaseUrl: "https://0.0.0.0:5601"
+server.port: 5601
+# Elasticsearch settings
+elasticsearch.hosts: [ "https://es01:9200" ]
+elasticsearch.ssl.certificateAuthorities: [ "/usr/share/kibana/config/rootCA.pem" ]
+elasticsearch.serviceAccountToken: AAEAAWVsYXN0aWMva2liYW5hL2tpYmFuYS1zeXN0ZW06LWlwVTMtZGtRSlcxT2xKR0lKVURKUQ
+#elasticsearch.username: "elastic"
+#elasticsearch.password: "RDC***7890"
+
+# Elasticsearch monitoring settings
+monitoring.ui.container.elasticsearch.enabled: true
+elasticsearch.ssl.verificationMode: full
+# X-Pack Security
+#security.encryptionKey: "somesuperlongstringlikethisoneMQBbtsynu4bV2uxLy"
+#xpack.reporting.encryptionKey: "somesuperlongstringlikethisoneMQBbtsynu4bV2uxLy"
+
+# SSL settings
+
+server.ssl.enabled: true
+server.ssl.certificate: "/usr/share/kibana/config/kib01.crt"
+server.ssl.key: "/usr/share/kibana/config/kib01.key"
+server.ssl.certificateAuthorities: [ "/usr/share/kibana/config/rootCA.pem" ]
+
+# fleet settings for Elastic-agent
+#xpack.fleet.enabled: true
+#xpack.fleet.agents.enabled: true
+#xpack.fleet.agents.tlsCheckDisabled: true
+#xpack.fleet.agents.kibana.host: "https://kibana:5601"
+#xpack.fleet.agents.elasticsearch.host: "https://elasticsearch:9200"
+
+#xpack.ingestManager.enabled: true
+#xpack.ingestManager.fleet.enabled: true
